@@ -1,0 +1,130 @@
+/* Reset Bsco */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Header */
+header {
+  background-color: #2e8b57; /* Verde esmeralda */
+  padding: 1rem;
+  color: #fff;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.logo {
+  width: 60px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+nav ul.hidden {
+  display: none;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+button#boton-menu {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+/* Portada */
+.portada {
+  background: url('../img/portada-construccion.png') center/cover no-repeat;
+  padding: 6rem 2rem;
+  color: #fff;
+  text-align: center;
+}
+.texto-portada h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.texto-portada p {
+  margin-bottom: 1rem;
+}
+.boton-principal {
+  background: #2e8b57;
+  padding: 0.75rem 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* Seccion Servicios */
+.seccion-servicios {
+  padding: 2rem;
+  background: #fff;
+  text-align: center;
+}
+.grid-servicios {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-top: 2rem;
+}
+.tarjeta-servicio {
+  background: #eee;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.tarjeta-servicio img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+.tarjeta-servicio h3 {
+  margin: 0.5rem 0;
+  color: #2e8b57;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #ccc;
+  padding: 1rem;
+  text-align: center;
+}
+footer a {
+  color: #ccc;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+.footer-info nav {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive menu */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    background: #2e8b57;
+    padding: 1rem;
+  }
+  .texto-portada h2 {
+    font-size: 1.5rem;
+  }
+}
