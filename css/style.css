@@ -1,9 +1,11 @@
-/* Reset Bsco */
+/* Reset básico para que los elementos no tengan márgenes/paddings que no controlamos */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Configuración de texto y color de fondo */
 body {
   font-family: Arial, sans-serif;
   background-color: #f7f7f7;
@@ -11,33 +13,46 @@ body {
   line-height: 1.5;
 }
 
-/* Header */
+/* HEADER */
+
+/* Encabezado con color y padding */
 header {
   background-color: #2e8b57; /* Verde esmeralda */
   padding: 1rem;
   color: #fff;
 }
+
+/* Alinea logo y texto del encabezado horizontalmente */
 .logo-container {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
+
+/* Logo del encabezado más pequeño */
 .logo {
   width: 60px;
 }
+
+/* Menú en línea en desktop */
 nav ul {
   list-style: none;
   display: flex;
   gap: 1rem;
 }
+/* Clase para ocultar el menú cuando se despliega */
 nav ul.hidden {
   display: none;
 }
+
+/* Estilo de los links del menú */
 nav a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
 }
+
+/* Estilo del botón del menú móvil */
 button#boton-menu {
   background: none;
   border: none;
@@ -47,20 +62,41 @@ button#boton-menu {
   margin-left: auto;
 }
 
-/* Portada */
+/* Imagen dentro del servicio a la mitad de su tamaño, centrada */
+.servicio-img {
+  width: 50%;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+/* Clase para ocultar contenido desplegable */
+.hidden {
+  display: none;
+}
+
+/* PORTADA */
+
+/* Portada con imagen de fondo */
 .portada {
   background: url('../img/portada-construccion.png') center/cover no-repeat;
   padding: 6rem 2rem;
   color: #fff;
   text-align: center;
 }
+
+/* Título en portada */
 .texto-portada h2 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
+
+/* Párrafo en portada */
 .texto-portada p {
   margin-bottom: 1rem;
 }
+
+/* Botón verde principal */
 .boton-principal {
   background: #2e8b57;
   padding: 0.75rem 1.5rem;
@@ -70,54 +106,73 @@ button#boton-menu {
   font-weight: bold;
 }
 
-/* Seccion Servicios */
+/* SERVICIOS */
+
+/* Sección de servicios en general */
 .seccion-servicios {
   padding: 2rem;
   background: #fff;
   text-align: center;
 }
+
+/* Grid para colocar los servicios en varias columnas automáticamente */
 .grid-servicios {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   margin-top: 2rem;
 }
+
+/* Tarjeta que envuelve cada servicio */
 .tarjeta-servicio {
   background: #eee;
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+
+/* Imagen dentro de la tarjeta del servicio */
 .tarjeta-servicio img {
   width: 100%;
   border-radius: 6px;
   margin-bottom: 0.5rem;
 }
+
+/* Título del servicio */
 .tarjeta-servicio h3 {
   margin: 0.5rem 0;
   color: #2e8b57;
 }
 
-/* Footer */
+/* FOOTER */
+
+/* Pie de página con fondo oscuro */
 footer {
   background: #333;
   color: #ccc;
   padding: 1rem;
   text-align: center;
 }
+
+/* Links del pie de página */
 footer a {
   color: #ccc;
   text-decoration: none;
 }
+/* Subrayar links del pie de página cuando se pasa el mouse */
 footer a:hover {
   text-decoration: underline;
 }
+
+/* Espaciado del nav del footer */
 .footer-info nav {
   margin-top: 0.5rem;
   font-size: 0.9rem;
 }
 
-/* Responsive menu */
+/* RESPONSIVE MENU */
+
+/* Diseño del menú en pantallas pequeñas */
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
